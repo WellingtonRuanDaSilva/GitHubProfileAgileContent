@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchProfileViewController" customModule="GitHubProfileAgileContent" customModuleProvider="target">
+            <connections>
+                <outlet property="profileSearchBar" destination="1OV-2p-CA6" id="a6h-YQ-uZJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="uZF-So-kfw">
+                    <rect key="frame" x="16" y="288.5" width="343" height="90"/>
+                    <subviews>
+                        <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Username" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OV-2p-CA6">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="29"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" systemColor="darkTextColor"/>
+                            <color key="barTintColor" systemColor="darkTextColor"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dY4-mx-mTf">
+                            <rect key="frame" x="139.5" y="61" width="64" height="29"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <state key="normal" title="Search"/>
+                            <connections>
+                                <action selector="searchProfilePressed:" destination="-1" eventType="touchUpInside" id="iB2-2K-wNX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="1OV-2p-CA6" firstAttribute="leading" secondItem="uZF-So-kfw" secondAttribute="leading" id="F98-lT-U4g"/>
+                        <constraint firstItem="1OV-2p-CA6" firstAttribute="top" secondItem="uZF-So-kfw" secondAttribute="top" id="Thw-Xs-oJk"/>
+                        <constraint firstAttribute="trailing" secondItem="1OV-2p-CA6" secondAttribute="trailing" id="ao4-FZ-qci"/>
+                        <constraint firstAttribute="height" constant="90" id="rsR-XY-W0V"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uZF-So-kfw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="c6O-VR-Krx"/>
+                <constraint firstItem="uZF-So-kfw" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="mC5-8D-juF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uZF-So-kfw" secondAttribute="trailing" constant="16" id="x4d-ss-5og"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="94"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
