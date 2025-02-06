@@ -31,7 +31,7 @@ final class Requester: RequestExecuter {
         
         if urlRequest.value(forHTTPHeaderField: "Content-Type") == nil {
             urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        }
+        } 
         
         let dataTask = session.dataTask(with: urlRequest) { data, response, error in
             
@@ -52,4 +52,5 @@ final class Requester: RequestExecuter {
         }
         dataTask.resume()
     }
+    
 }

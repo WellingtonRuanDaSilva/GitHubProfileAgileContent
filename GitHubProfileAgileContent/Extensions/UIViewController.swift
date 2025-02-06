@@ -11,7 +11,7 @@ extension UIViewController{
     
     func showAlert(title: String, message: String, type: UIAlertController.Style = .alert, buttonMessage: String = "Ok", action: UIAlertAction? = nil) {
         let alertController = UIAlertController(title: title, message:
-            "User not found. Please enter another name", preferredStyle: type)
+            message, preferredStyle: type)
         if let action = action {
             alertController.addAction(action)
         } else {

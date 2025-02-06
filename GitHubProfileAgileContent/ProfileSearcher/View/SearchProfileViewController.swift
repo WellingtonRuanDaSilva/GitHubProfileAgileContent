@@ -62,7 +62,7 @@ extension SearchProfileViewController: LoadableProtocol {
     func loadError(_ error: Error) {
         DispatchQueue.main.async {
             Spinner.stop()
-            self.showAlert(title: "Error in fetch", message: error.localizedDescription)
+            self.showAlert(title: "User not Found", message: "Please enter another name")
         }
     }
     
