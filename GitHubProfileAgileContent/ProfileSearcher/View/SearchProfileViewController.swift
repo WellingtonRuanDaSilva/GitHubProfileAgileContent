@@ -65,5 +65,5 @@ extension SearchProfileViewController: LoadableProtocol {
             self.showAlert(title: "User not Found", message: "Please enter another name")
         }
     }
-    
+
 }

@@ -48,11 +48,6 @@
 			path = GitHubProfileAgileContent;
 			sourceTree = "<group>";
 		};
-		47C8C9162D541EAB00F2CEA0 /* GitHubProfileAgileContentTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = GitHubProfileAgileContentTests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				47C8C8FF2D541EAA00F2CEA0 /* GitHubProfileAgileContent */,
-				47C8C9162D541EAB00F2CEA0 /* GitHubProfileAgileContentTests */,
 				47C8C8FE2D541EAA00F2CEA0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -136,9 +130,6 @@
 			);
 			dependencies = (
 				47C8C9152D541EAB00F2CEA0 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				47C8C9162D541EAB00F2CEA0 /* GitHubProfileAgileContentTests */,
 			);
 			name = GitHubProfileAgileContentTests;
 			packageProductDependencies = (
