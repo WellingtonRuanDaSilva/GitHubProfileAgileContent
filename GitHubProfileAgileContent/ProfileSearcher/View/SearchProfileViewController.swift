@@ -62,7 +62,17 @@ extension SearchProfileViewController: LoadableProtocol {
     func loadError(_ error: Error) {
         DispatchQueue.main.async {
             Spinner.stop()
-            self.showAlert(title: "User not Found", message: "Please enter another name")
+//            self.showAlert(title: "User not Found", message: "Please enter another name")
+            switch error.localizedDescription {
+                case "The request timed out.":
+                    self.showAlert(title: "A network error has ocurred", message: "Check your Internet connection and try again later")
+                case "server_wrong_error":
+                    self.showAlert(title: "A network error has ocurred", message: "Check your Internet connection and try again later")
+                case "The Internet connection appears to be offline.":
+                    self.showAlert(title: "A network error has ocurred", message: "Check your Internet connection and try again later")
+                default:
+                    self.showAlert(title: "User not Found", message: "Please enter another name")
+                }
         }
     }
 
