@@ -39,6 +39,7 @@ class ProfileDetailsViewController: UIViewController {
         self.viewModel.loadDelegate = self
         self.viewModel.fetchProfileImage()
         profileNameLabel.text = viewModel.profileName
+        
     }
     
     required init?(coder: NSCoder) {
